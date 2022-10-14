@@ -1,0 +1,64 @@
+= TODO =
+
+== Code improvement ==
+
+* Refactor plain text parser to a class. There is too much duplication
+  of that.
+* Use shared_ptr for librevenge::RVNGInputStream.
+
+== Existing formats improvement ==
+
+== All formats ==
+
+* Check handling of images.
+* Check if the format supports headings, text language, embedded fonts or
+  any other feature that librevenge can handle now. If yes, implement
+  support for it.
+
+=== FB2 ===
+
+* Improve parsing and handling of footnotes. Drop footnote identifier
+  explicitly given as <title> or <subtitle>.
+* Handle sub- and superscript.
+
+=== LRF ===
+
+* Handle metadata.
+* Parse Canvas.
+* Try to reconstruct tables from canvas blocks.
+* Try to reconstruct footnotes.
+* Handle embedded fonts.
+* Handle numbered lists.
+* Handle headers and footers.
+* Do not create separate page spans if page properties have not changed.(?)
+
+=== PLK ===
+
+* Handle font sizes.
+
+=== PML ===
+
+* Handle sub- and superscript.
+* Handle large font.
+
+=== TD ===
+
+* Handle large font.
+* Handle images.
+
+== New formats ==
+
+=== Documented / reverse-engineered ===
+
+* TEI Lite (?)
+
+=== Undocumented ===
+
+* ISilo 1-3
+* TomeRaider 2 and 3
+
+=== Unknown ===
+
+* HandStory eBook
+* Newton eBook
+* TeBR

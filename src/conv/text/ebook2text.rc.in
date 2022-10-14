@@ -1,0 +1,31 @@
+#include <winver.h>
+
+VS_VERSION_INFO VERSIONINFO
+  FILEVERSION @EBOOK_MAJOR_VERSION@,@EBOOK_MINOR_VERSION@,@EBOOK_MICRO_VERSION@,BUILDNUMBER
+  PRODUCTVERSION @EBOOK_MAJOR_VERSION@,@EBOOK_MINOR_VERSION@,@EBOOK_MICRO_VERSION@,0
+  FILEFLAGSMASK 0
+  FILEFLAGS 0
+  FILEOS VOS__WINDOWS32
+  FILETYPE VFT_APP
+  FILESUBTYPE VFT2_UNKNOWN
+  BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+      BLOCK "040904B0"
+      BEGIN
+	VALUE "CompanyName", "The libe-book developer community"
+	VALUE "FileDescription", "ebook2text"
+	VALUE "FileVersion", "@EBOOK_MAJOR_VERSION@.@EBOOK_MINOR_VERSION@.@EBOOK_MICRO_VERSION@.BUILDNUMBER"
+	VALUE "InternalName", "ebook2text"
+	VALUE "LegalCopyright", "Copyright (C) 2013 David Tardon"
+	VALUE "OriginalFilename", "ebook2text.exe"
+	VALUE "ProductName", "libe-book"
+	VALUE "ProductVersion", "@EBOOK_MAJOR_VERSION@.@EBOOK_MINOR_VERSION@.@EBOOK_MICRO_VERSION@"
+      END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+      VALUE "Translation", 0x409, 1200
+    END
+  END
+

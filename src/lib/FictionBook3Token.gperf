@@ -1,0 +1,20 @@
+%includes
+%{
+#if defined __GNUC__
+#pragma GCC diagnostic ignored "-Wmissing-field-initializers"
+#pragma GCC diagnostic ignored "-Wunused-parameter"
+#endif
+
+using namespace FictionBook3Token;
+%}
+%struct-type
+struct Token
+{
+  const char *name;
+  int id;
+};
+%%
+http://www.fictionbook.org/FictionBook3/body,NS_fb3b
+http://www.fictionbook.org/FictionBook3/description,NS_fb3d
+http://www.w3.org/1999/xlink,NS_xlink
+%%

@@ -1,0 +1,30 @@
+%includes
+%{
+#include "EPubToken.h"
+
+#if defined __GNUC__
+#pragma GCC diagnostic ignored "-Wmissing-field-initializers"
+#endif
+
+using namespace EPubToken;
+%}
+%struct-type
+struct Token
+{
+  const char *name;
+  int id;
+};
+%%
+1.0,_1_0
+application/epub+zip,MIME_epub
+application/oebps-package+xml,MIME_opf
+container,container
+encryption,encryption
+full-path,full_path
+media-type,media_type
+rootfile,rootfile
+rootfiles,rootfiles
+signatures,signatures
+urn:oasis:names:tc:opendocument:xmlns:container,NS_container
+version,version
+%%

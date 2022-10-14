@@ -1,0 +1,66 @@
+Source: libe-book
+Priority: optional
+Maintainer: Debian LibreOffice Maintainers <debian-openoffice@lists.debian.org>
+Uploaders: Rene Engelhard <rene@debian.org>
+Build-Depends: autotools-dev,
+               debhelper (>= 10),
+               gperf,
+               libboost-dev,
+               libboost-filesystem-dev,
+               libcppunit-dev,
+               libicu-dev,
+               liblangtag-dev,
+               librevenge-dev (<< 0.1~),
+               libxml2-dev,
+               zlib1g-dev,
+               pkg-config
+Standards-Version: 3.9.4
+Section: libs
+Homepage: http://www.freedesktop.org/wiki/Software/libe-book
+
+Package: libe-book-dev
+Section: libdevel
+Architecture: any
+Multi-Arch: same
+Depends: libe-book-0.1-1 (= ${binary:Version}),
+         librevenge-dev (<< 0.1~),
+         libicu-dev,
+         libxml2-dev,
+         zlib1g-dev,
+         ${misc:Depends}
+Description: library for reading and converting various  e-book formats
+ libe-book is a library and a set of tools for reading and converting
+ various non-HTML reflowable e-book formats.
+ .
+ Currently supported are:
+  - eReader .pdb
+  - FictionBook v. 2 (including zipped files)
+  - PalmDoc Ebook
+  - Plucker .pdb
+  - QiOO (mobile format, for java-enabled cellphones)
+  - TCR (simple compressed text format)
+  - TealDoc
+  - zTXT
+  - ZVR (simple compressed text format)
+ .
+ This package contains the development files (headers, ...)
+
+Package: libe-book-0.1-1
+Architecture: any
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Description: library for reading and converting various  e-book formats
+ libe-book is a library and a set of tools for reading and converting
+ various non-HTML reflowable e-book formats.
+ .
+ Currently supported are:
+  - eReader .pdb
+  - FictionBook v. 2 (including zipped files)
+  - PalmDoc Ebook
+  - Plucker .pdb
+  - QiOO (mobile format, for java-enabled cellphones)
+  - TCR (simple compressed text format)
+  - TealDoc
+  - zTXT
+  - ZVR (simple compressed text format)

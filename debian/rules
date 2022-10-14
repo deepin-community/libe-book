@@ -1,0 +1,23 @@
+#!/usr/bin/make -f
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+%:
+	dh $@
+
+#20:21 <@dtardon> _rene_, the boost issue::system is an internal boost thing. it 
+#                 is fixed by commit b903d0dc91f482b348e5840e5a1df599ebd5e6f9 . 
+#                 you can pass the same define though CPPFLAGS to configure as a 
+#                 workaround. i'll add the missing check for librevenge-stream 
+#                 for unit tests (btw, i think at least libetonyek has the same 
+#                 problem)
+#20:25 <@dtardon> _rene_, CPPFLAGS=-DBOOST_ERROR_CODE_HEADER_ONLY
+CPPFLAGS+=-DBOOST_ERROR_CODE_HEADER_ONLY
+
+override_dh_auto_configure:
+	dh_auto_configure -- --disable-werror
+
+# fails; temporarily disabled
+#override_dh_auto_test:
+

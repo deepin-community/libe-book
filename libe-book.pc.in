@@ -1,0 +1,13 @@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+libdir=@libdir@
+includedir=@includedir@
+                                                                       
+Name: libe-book-@EBOOK_MAJOR_VERSION@.@EBOOK_MINOR_VERSION@
+Description: Library for parsing various reflowable ebook formats
+Version: @VERSION@
+Requires: librevenge-0.0
+Libs: -L${libdir} -le-book-@EBOOK_MAJOR_VERSION@.@EBOOK_MINOR_VERSION@
+Cflags: -I${includedir}/libe-book-@EBOOK_MAJOR_VERSION@.@EBOOK_MINOR_VERSION@
+
+Requires.private: icu-uc @REQUIRES_EXPERIMENTAL@ liblangtag libxml-2.0 zlib

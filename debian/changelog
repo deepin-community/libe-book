@@ -1,0 +1,76 @@
+libe-book (0.1.3-2) unstable; urgency=medium
+
+  * debian/patches/no-icu-boolean.diff: prepare for ICU 68 transition
+  * debian/control: restrict librevenge-dev (build-)dep to
+    librevenge-dev (<< 0.1~)
+
+ -- Rene Engelhard <rene@debian.org>  Sun, 22 Nov 2020 13:30:01 +0100
+
+libe-book (0.1.3-1) unstable; urgency=medium
+
+  * New upstream version 0.1.3
+  * add new build-dependency liblangtag-dev
+
+ -- Rene Engelhard <rene@debian.org>  Sun, 07 Jan 2018 21:26:50 +0100
+
+libe-book (0.1.2-4) unstable; urgency=medium
+
+  * [a3462bc] move Maintainer: to Debian LibreOffice Maintainers
+  * [b685d1c] multiarchify
+
+ -- Rene Engelhard <rene@debian.org>  Mon, 12 Sep 2016 21:34:47 +0200
+
+libe-book (0.1.2-3) unstable; urgency=medium
+
+  * use CPPFLAGS+=-DBOOST_ERROR_CODE_HEADER_ONLY to avoid (bogus) linkage
+    attempt to boost-system
+
+ -- Rene Engelhard <rene@debian.org>  Fri, 05 Aug 2016 21:00:17 +0200
+
+libe-book (0.1.2-2) unstable; urgency=medium
+
+  * upload to unstable
+
+ -- Rene Engelhard <rene@debian.org>  Sun, 05 Apr 2015 19:09:50 +0200
+
+libe-book (0.1.2-1) experimental; urgency=medium
+
+  * New upstream release
+
+ -- Rene Engelhard <rene@debian.org>  Tue, 06 Jan 2015 22:45:24 +0100
+
+libe-book (0.1.1-2) unstable; urgency=low
+
+  * upload to unstable
+
+  * fix debian/copyright; this is MPL-2.0 only 
+
+ -- Rene Engelhard <rene@debian.org>  Thu, 07 Aug 2014 23:08:06 +0200
+
+libe-book (0.1.1-1) experimental; urgency=low
+
+  * New upstream release
+
+ -- Rene Engelhard <rene@debian.org>  Tue, 03 Jun 2014 18:45:59 +0200
+
+libe-book (0.1.0-1) experimental; urgency=low
+
+  * New upstream release
+
+  * hack libcss, libhububb and libmspack out of Requires.private of the
+    .pc - not needed yet...
+
+ -- Rene Engelhard <rene@debian.org>  Sat, 24 May 2014 15:08:50 +0200
+
+libe-book (0.0.3-2) unstable; urgency=low
+
+  * fix debian/watch
+  * upload to unstable 
+
+ -- Rene Engelhard <rene@debian.org>  Tue, 06 May 2014 21:52:08 +0200
+
+libe-book (0.0.3-1) experimental; urgency=low
+
+  * Initial release
+
+ -- Rene Engelhard <rene@debian.org>  Mon, 14 Apr 2014 21:50:37 +0200

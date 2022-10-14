@@ -1,0 +1,39 @@
+%includes
+%{
+#include "RocketEBookToken.h"
+
+#if defined __GNUC__
+#pragma GCC diagnostic ignored "-Wmissing-field-initializers"
+#endif
+
+using namespace RocketEBookToken;
+%}
+%struct-type
+struct Token
+{
+  const char *name;
+  int id;
+};
+%%
+<unknown>,unknown
+AUTHOR,AUTHOR
+BODY,BODY
+COMMENT,COMMENT
+COPYRIGHT,COPYRIGHT
+COPYTITLE,COPYTITLE
+COPY_ID,COPY_ID
+GENERATOR,GENERATOR
+ISBN,ISBN
+MENUMARK,MENUMARK
+OUTPUT,OUTPUT
+PARSE,PARSE
+PUBSERVER_ID,PUBSERVER_ID
+PUB_NAME,PUB_NAME
+REVISION,REVISION
+SuggestedRetailPrice,SuggestedRetailPrice
+TITLE,TITLE
+TITLE_LANGUAGE,TITLE_LANGUAGE
+TYPE,TYPE
+URL,URL
+USERNAME,USERNAME
+%%
