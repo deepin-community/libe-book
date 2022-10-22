@@ -1,3 +1,9 @@
+libe-book (0.1.3-3) unstable; urgency=medium
+
+  * rebuild.
+
+ -- Heng Liu <liuheng@deepin.org>  Sat, 22 Oct 2022 20:32:05 +0800
+
 libe-book (0.1.3-2) unstable; urgency=medium
 
   * debian/patches/no-icu-boolean.diff: prepare for ICU 68 transition
